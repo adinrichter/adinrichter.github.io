@@ -1,0 +1,289 @@
+/* general styling */
+/* tons of optimizations to be done but i'm too lazy */
+
+body {
+    margin: 0%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 0%;
+    color: black;
+}
+
+p, pre {
+    font-family: Avant Garde, Helvetica;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: pre-line;
+}
+
+a {
+    color: blue;
+}
+
+img {
+    filter: grayscale(75%);
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    background-color: white;
+    font-family: Avant Garde, Helvetica;
+}
+
+/* navbar styling */
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    animation: move_nav 0.3s;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    animation: show_nav_text 0.4s;
+}
+
+/* layout styling */
+
+#about {
+    background-color: #eee;
+}
+
+#GitHub {
+    background-color: #ddd;
+}
+
+#contact {
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.container {
+    display: block;
+}
+
+.column-wide-info {
+    float: left;
+    width: 67%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+}
+
+.column-short-info {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+}
+
+.column-img {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+}
+
+.column-img img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.column-contact {
+    float: left;
+    width: 60%;
+    padding-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.column-tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+/* item styling */
+
+.white-text {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin {
+    margin-top: 3%;
+}
+
+.info-text {
+    font-size: 24px;
+}
+
+.bg-image {
+    position: absolute;
+    z-index: -1;
+    filter: contrast(50%);
+}
+
+.portfolio-info {
+    background: rgba(0,0,0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+/* contact form styling */
+
+.name {
+    float: inline-start;
+    text-align: left;
+}
+
+.email {
+    float: inline;
+    text-align: left;
+}
+
+.message {
+    float: inline;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.submit {
+    margin-top: 5px;
+}
+
+input {
+    font-family: "Trebuchet MS", Optima;
+}
+
+input[type=text] {
+    width: 45%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    resize: vertical
+}
+
+textarea[name=Message] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    height: 15vh;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 1px black inset;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit]:hover {
+    background-color:  blue;
+    color: white;
+}
+
+form {
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+    font-family: "Trebuchet MS", Optima;
+}
+
+/* media styling */
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .column-large {
+        overflow: auto;
+    }
+}
+
+/* hover effects */
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* animations */
+
+@keyframes move_nav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+@keyframes show_nav_text {
+    0%, 75% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
