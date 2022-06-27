@@ -3,5 +3,7 @@ This is my portfolio website, it can be accessed at adinrichter.github.io or adi
 
 
 todo:
-reformat for compatibility on mobile
+
+reformat for compatibility on mobile 
+
 space out page and style for better readability and aesthetics
