@@ -12,7 +12,7 @@
     </head>
     <body>
 
-    <div>
+    <div class="background">
 
         <!-- Start Nav -->
 
@@ -34,7 +34,69 @@
 
         <!-- End Nav -->
 
+        <!-- Start Contact -->
+
+        <div class="contact-container">
+            <p class="contact-info">Contact Me</p>
+            <p class="contact-about">If you want help with your programming needs,<br>
+                or have questions, send me a message here</p>
+            <div class="contact-box">
+                <form id="contact-left" action="https://formspree.io/f/mjvllnad" method="POST">
+                    <div class="form-row">
+                        <div class="input-item">
+                            <label>Name</label>
+                            <input type="text" name="Name" placeholder="Full Name">
+                        </div>
+                        <div class="input-item">
+                            <label>Phone</label>
+                            <input type="text" name="Phone Number" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-item">
+                            <label>Email</label>
+                            <input type="text" name="Name" placeholder="Email Address">
+                        </div>
+                        <div class="input-item">
+                            <label>Subject</label>
+                            <input type="text" name="Phone Number" placeholder="Message Subject">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-item">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="input-item">
+                                <input class="submit" type="submit" value="SUBMIT">
+                            </div>     
+                        </div>           
+                </form>
+                <div id="contact-right">
+                   <p id="info-banner">For personal inquiries email<br><br><a href="" action="mailto:personal@adinrichter.com">personal@adinrichter.com</a></p>
+                </div>
+            </div>
+            <div id="alternate-contact">
+                <p id="info-banner">For personal inquiries email <a href="mailto:personal@adinrichter.com">personal@adinrichter.com</a></p>
+            </div>
+        </div>
+
+        <!-- End Contact -->
+
+        <!-- Start Footer -->
+
+        <div class="center">
+            <div id="footer">
+                <div id="footing">
+                    Made by Adin Richter | "&copy;" 2022
+                </div>
+            </div>
+        </div>
+
+        <!-- End Footer -->
     </div>
-        
+
     </body>
 </html>
