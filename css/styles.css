@@ -312,13 +312,13 @@ h1, h2, h3, h4, h5 {
 
 #info-banner {
     font-size: 2rem;
-    padding-bottom: 20px;
     font-weight: 300;
 }
 
 #info-banner a {
     text-decoration: underline;
     color: white;
+    font-size: 1.6rem;
 }
 
 #alternate-contact {
@@ -379,6 +379,7 @@ input {
     font-size: 1rem;
     outline: none;
     border-right: 50px solid white;
+    caret-color: auto;
 }
 
 textarea {
