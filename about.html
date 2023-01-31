@@ -35,14 +35,15 @@
 
         <!-- Start About -->
         <div>
-            <center>
-                <h1 style="color: green">GeeksforGeeks</h1>
-                <h3>Embedding the PDF file Using Object Tag</h3>
-                <object data="pdf link" 
-                        width="800" 
-                        height="500"> 
-                </object>
-            </center>
+            <object data='/media/content/Partial%20Resume.pdf#view=FitH&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0' 
+            type='application/pdf' 
+            width='100%' 
+            height='800px'>
+            <p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="/media/content/Partial%20Resume.pdf">Download PDF</a></p>
+            </object>
+            <script>
+                ect.embed('/media/content/Partial Resume.pdf', "embed", options);
+            </script>
         </div>
         
         <!-- End About -->
@@ -61,4 +62,5 @@
 
     </div>  
     </body>
+
 </html>
