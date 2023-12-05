@@ -1,3 +1,13 @@
+:root {
+    --background-color: #c3d8e4;
+    --text-color: #705e46;
+    --link-color: #6084a2;
+    --title-color: #632d0e;
+    --banner-color: #b5a99c;
+    --info-color : #08415c;
+}
+
+
 * {
     box-sizing: border-box;
     font-family: "Avenir Next", Arial, Helvetica, sans-serif;
@@ -7,7 +17,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 p {
@@ -21,7 +31,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .background {
-    background-color: #f1bf98;
+    background-color: var(--background-color);
 }
 
 /* start navbar styling */
@@ -30,14 +40,19 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eee5e9;
+    background-color: #b5a99c;
 }
 
 .brand-title {
     font-size: 1.7rem;
     margin: .8rem;
-    color: #cc2936;
+    color: var(--title-color);
     text-decoration: none;
+}
+
+.brand-title:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--title-color);
 }
 
 .navbar-links ul {
@@ -53,14 +68,14 @@ h1, h2, h3, h4, h5 {
 
 .navbar-links li a {
     text-decoration: none;
-    color: #08415c;
+    color: var(--link-color);
     padding: 1rem;
     display: block;
 }
 
 .navbar-links li:hover {
-    background-color: #881531ab;
-    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
 }
 
 .toggle-button {
@@ -118,91 +133,40 @@ h1, h2, h3, h4, h5 {
 
 /* end navbar styling */
 
-/* start banner styling */
+/* start homepage styling */
 
-.banner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    background-color: #261447;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 175px;
-    margin-top: 2.5%;
-    margin-bottom: 4%;
-    margin-left: 2%;
-}
-
-.profile-photo {
-    margin-top: 2%;
-    margin-left: 2%;
-    width: 350px;
-    height: 350px;
-    border-radius: 5px;
-    box-shadow: .4rem .5rem .6rem #1a0f2f;
-}
-
-.profile-name {
-    font-size: 6rem;
-    margin-left: 2%;
-    float: left;
-    color: #f39c6b;
-}
-
-.profile-description {
-    font-size: 3rem;
-    margin-left: 2%;
+.title {
+    font-size: 4rem;
+    color: var(--info-color);
     text-align: left;
-    color: #f39c6b;
+    margin-top: 2%;
+    margin-left: 1%
 }
 
-@media (max-aspect-ratio: 9/16) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        margin-top: 10px;
-        margin-left: auto;
-    }
-    .profile-name {
-        padding-bottom: 5rem;
-        padding-left: 1rem;
-        font-size: 6rem;
-    }
-    .profile-description {
-        padding-left: 1rem;
-        font-size: 2.4rem;
-    }
-}
-
-/* end banner styling */
+/* end homepage styling */
 
 /* start about styling */
 
 .info {
     width: 100%;
     padding: 2.5%;
-    padding-top: 2%;
+    padding-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .about {
-    padding: 5%;
+    padding: 1.5%;
     color: #08415c;
 }
 
 .about-title {
-    font-size: 2rem;
-    color: #cc2936;
+    font-size: 1.8rem;
+    color: #6084a2;
 }
 
 .about-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media (max-aspect-ratio: 9/16) {
